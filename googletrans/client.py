@@ -53,7 +53,7 @@ class Translator(object):
             self.session.mount('https://', TimeoutAdapter(timeout))
             self.session.mount('http://', TimeoutAdapter(timeout))
 
-        self.service_urls = service_urls or ['translate.google.com']
+        self.service_urls = service_urls or ['translate.google.cn']
         self.token_acquirer = TokenAcquirer(session=self.session, host=self.service_urls[0])
 
         # Use HTTP2 Adapter if hyper is installed
