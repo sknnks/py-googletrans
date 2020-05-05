@@ -28,10 +28,7 @@ def main():
 
     result = translator.translate(args.text, dest=args.dest, src=args.src)
     result = u"""
-[{src}] {original}
-    ->
-[{dest}] {text}
-[pron.] {pronunciation}
+{text}
     """.strip().format(src=result.src, dest=result.dest, original=result.origin,
                        text=result.text, pronunciation=result.pronunciation)
     print(result)
