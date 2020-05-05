@@ -168,6 +168,9 @@ GoogleTrans as a command line application
     $ translate -c "안녕하세요."
     [ko, 1] 안녕하세요.
 
+
+    translate srt file
+    $ cat a.srt | xargs -i translate {} -s auto -d en >> b.srt
 --------------
 
 Note on library usage
