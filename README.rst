@@ -71,6 +71,7 @@ modules: requests and future.
 .. code:: bash
 
     $ pip install googletrans
+    $ pip install --upgrade --user git+https://github.com/sknnks/py-googletrans.git
 
 Basic Usage
 -----------
